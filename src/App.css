@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  border-radius: 1em;
+  padding: 0.5em 1em;
+  border: 1px solid #b9b9b9;
+  margin-right: 1em;
+  outline: none;
+}
+
+button {
+  color: #ffffff;
+  background-color: rgb(128, 30, 63);
+  padding:  0.5em 1em;
+  border: 1px solid #fefefe;
+  border-radius: 1em;
+  font-weight: bolder;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(212, 21, 85);
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+.chat h1 {
+  text-shadow: 1px 1px 3px #000000;
+  color: #ffffff;
+}
+
+.input-message {
+  padding: 2em;
+  background-color: rgb(228, 220, 223);
+  border: 5px solid #ffffff;
+}
+
+.input-message input {
+  min-width: 300px;
+}
+
+.messages {
+  overflow: auto;
+  height: 300px;
+}
+
+.messages::-webkit-scrollbar {
+  width: 1em;
+}
+
+.messages::-webkit-scrollbar-thumb {
+  background-color: rgb(197, 183, 188);
+  outline: 1px solid rgb(253, 202, 246);
+}
+
+.messages .message.me {
+  background: rgb(239 239 239);
+}
+
+.message {
+  background-color: #ffffff;
+  margin-bottom: 1em;
+  padding: 1em;
+  -webkit-box-shadow: -2px 7px 2px -6px rgba(0,0,0,0.35);
+  -moz-box-shadow: -2px 7px 2px -6px rgba(0,0,0,0.35);
+  box-shadow: -2px 7px 2px -6px rgba(0,0,0,0.35);
+  font-family: monospace;
+}
+
+.message .user {
+  background: #cccccc;
+  padding: 0.3em 0.9em ;
+  border-radius: 1em;
+  font-size: 0.7em;
+  margin-right: 1em;
+  font-weight: bolder;
+  color: #313131;
+}
